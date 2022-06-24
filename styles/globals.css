@@ -22,8 +22,8 @@ a {
 
 
 /* for home page */
-.homecontainer{
-  min-height:200vh;
+.home_container-main{
+
   background-color:#F3F2F3;
   padding-left: 55px;
   padding-right:55px;
@@ -192,4 +192,473 @@ text-align: center;
   border-style: none !important;
   box-shadow: none !important;
   color:black !important;
+}
+
+
+
+
+/*for second */
+
+
+.nucoin_hp-fb-notselected{
+ 
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #353434d3;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+   
+    min-width: 150px;
+    text-align: center;
+
+}
+
+.nucoin_second-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.nucoin_second-progress{
+  font-size: 19px;
+  color:#1FF8F2;
+  font-weight: 600;
+}
+
+.nucoin_second-roadmap{
+  font-size: 46px;
+  font-weight: 700;
+  margin-top:0px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.nucoin_second-timeline-img{
+
+  width:100%;
+  margin-top:55px;
+
+}
+
+.nucoin_second_events_container{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*about */
+.nucoin_about_ab{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+}
+.nucoin_about_about{
+  font-size: 46px;
+  font-weight: 700;
+  margin-top:-40px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.nucoin_about_p{
+  font-size:20px;
+
+}
+
+.hp-fp-110{
+  background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  min-width: 150px;
+  text-align: center;  
+}
+
+.hp-fp-110:hover{
+  box-shadow: 0 0 16px #aa2fdc;
+  cursor: pointer;
+
+}
+
+.nucoin_nugenis_container{
+
+  background-color: #3D339A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:70px;
+}
+
+.nucoin_nugenis-video-title{
+  box-sizing: border-box;
+  margin-top:10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color:white;
+}
+
+.nucoin_nugenis-video-description{
+ 
+  color:white;
+  font-size: 19px;
+  margin-top: 11px;
+  margin-bottom: 70px;
+}
+
+.nucoin_services_divider{
+  display:flex;
+
+}
+
+.nucoin_services_divider-1{
+  font-size: 19px;
+  font-weight: 600;
+line-height: 1.3;
+  flex:1
+}
+
+.nucoin_services_divider-2{
+  flex:1;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nucoin_serives-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nucoin_service_up{
+
+}
+
+.nucoin_services-heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:-4px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+.nucoin_services-title{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nucoin_imgrow-container{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+
+.nucoin_imgrow-text{
+  text-align: center;
+  font-size: 19px;
+ 
+}
+
+.nucoin_imgrow-image{
+  width: 250px;
+  height:200px;
+}
+
+
+
+/*benifits */
+
+.nucoin_benifits_divider-2{
+  flex:1;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nucoin_benifits_divider-2-image{
+
+}
+
+.nucoin_benifits-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.nucoin_team-cardbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 25px;
+ 
+}
+
+.nucoin_team-image{
+width:100%;
+height: 250px;
+object-fit:cover;
+object-position: 0% 0%;
+margin-top: 0px;
+}
+
+.nucoin_team_cardcontainer{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+}
+
+.nucoin_team_card{
+  
+ 
+  background-color: white;
+  padding-bottom: 25px;
+
+}
+
+.nucoin_team-text{
+  text-align: center;
+  overflow: hidden;
+}
+
+.nucoin_teams-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_teams-button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* contact */
+.nucoin_contact_name{
+  width:48%;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_container{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_contact_name::content{
+  box-shadow: none !important;
+}
+
+.nucoin_contact_email{
+  width:48%;
+  height:49px;
+  margin-left: 4%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_address{
+  width:100%;
+  height:49px;
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_message{
+  width:100%;
+  height:250px;
+  margin-top:10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+}
+
+.nucoin_teams-button{
+  text-align: center;
+  align-self: center;
+}
+
+.nucoin_contact_name_email{
+  width:100%;
+}
+
+.nucoin_contact_heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:10px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+/* footer */
+
+.nucoin_footer-appstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-playstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-appstore{
+  display: flex;
+  font-size: 10px;
+  line-height: 0.2;
+  align-items: center;
+  gap:4px;
+  background-color: black;
+  width:140px;
+  padding-left: 16px;
+  border-radius: 10px;
+  color: white;
+  fill: white;
+}
+
+.nucoin_footer-playstore{
+  display: flex;
+}
+
+.nucoin_footer-store-text{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.nucoin_footer-store-box{
+  display: flex;
+  gap:25px;
+}
+
+.nucoin_footer-asection-container{
+  display: flex;
+  gap:25px;
+}
+
+.nucoin_footer-asection{
+  flex: 1;
+  padding-right: 55px;
+}
+
+.nucoin_footer-ax1{
+ font-size: 22px;
+}
+
+.nucoin_footer-ax2{
+font-size: 14px;
+line-height: 1.6;
+font-weight: 600;
+
+}
+
+.nucoin_footer-ax33{
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.nucoin_footer-ax3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 19px;
+  font-weight: 600;
+}
+
+.nucoin_footer-ax4{
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nucoin_footer-ax5{
+  border-style: none;
+  height:49px;
+  background-color: inherit;
+  flex: 1;
+  outline: none;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+
+}
+
+.nucoin_footer-ax6{
+font-size: 19px;
+}
+
+.nucoin_footer-ax7{
+  display:flex;
+  gap:4px;
+  margin-top: 10px;
 }

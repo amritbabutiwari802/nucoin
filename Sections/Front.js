@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Dropdown } from "react-bootstrap";
-
 const Front = () => {
   return (
     <div>
@@ -53,30 +51,6 @@ const Front = () => {
         <a className="hp-fp-102">My Wallet</a>
         <a className="hp-fp-103">Become a Miner</a>
         <h4 className="hp-fp-100">NuGenesis Platform Documentation</h4>
-        <Dropdown className="dropdown-100">
-          <Dropdown.Toggle
-            variant="success"
-            id="dropdown-basic"
-            className="dropdown-101"
-          >
-            Dropdown Button
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu className="dropdown-items-100">
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
       </div>
     </div>
   );
