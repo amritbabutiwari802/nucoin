@@ -4,10 +4,8 @@ import Video from "../components/Video";
 const About = () => {
   return (
     <div style={{ display: "flex" }}>
-      <div style={{ flex: "1" }} data-aos="fade-right"
-      data-aos-duration="1500">   <Video /></div>
-      <div style={{ flex: "1" }}   data-aos="fade-left"
-      data-aos-duration="1500">
+      <div style={{ flex: "1" }} >   <Video /></div>
+      <div style={{ flex: "1" }}   >
         <h4 className="nucoin_about_ab">Business Solution</h4>
         <h1 className="nucoin_about_about">About NuCoin</h1>
         <p className="nucoin_about_p">

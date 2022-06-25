@@ -44,7 +44,7 @@ const Second = () => {
       </div>
  
   
-            <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="2500">RoadMap Board</a>
+            <a className="hp-fp-102 " >RoadMap Board</a>
             
     </div>
   );
@@ -64,8 +64,7 @@ const FlyingCard = (props) => {
         marginTop: props.mt,
       }}
 
-      data-aos="fade-up"
-      data-aos-duration="2500"
+    
     >
       <svg
         class="MuiSvgIcon-root"
