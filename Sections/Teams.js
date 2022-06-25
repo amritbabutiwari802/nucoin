@@ -8,7 +8,8 @@ const Teams = (props) => {
 
       <div className="nucoin_team-cardbox">
         {props.items.map((value, index) => (
-          <a className="nucoin_team_cardcontainer">
+          <a className="nucoin_team_cardcontainer" key={value.src+index}  data-aos={index<2?"fade-left":"fade-right"}
+          data-aos-duration="2500" >
             <div className="nucoin_team_card" key={value.src + index}>
               <img src={value.src} alt="" className="nucoin_team-image" />
               <div className="nucoin_team-text">{value.text1}</div>
