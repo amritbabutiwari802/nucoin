@@ -445,6 +445,35 @@ line-height: 1.3;
 
 }
 
+.nucoin_benifit_divider{
+  display:flex;
+
+}
+
+.nucoin_benifit-dklfjskldf{
+  flex:0.1;
+}
+
+.nucoin_benifit_divider-1{
+  flex:0.8;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.nucoin_benifit_divider-2{
+
+  max-width: 50%;
+  font-size: 19px;
+  font-weight: 600;
+line-height: 1.3;
+  flex:1;
+}
+
+
+
 .nucoin_team-cardbox{
   display: flex;
   flex-direction: row;

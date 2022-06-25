@@ -33,6 +33,8 @@ const Home = () => {
             text: "Artificial Intelligence",
           },
         ]}
+
+        fade1="1"
       />
 
       <Benifits />
@@ -51,6 +53,9 @@ const Home = () => {
             text: "World Coverage",
           },
         ]}
+
+        fade1="2"
+
       />
 
       <Teams

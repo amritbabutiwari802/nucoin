@@ -8,15 +8,16 @@ const Benifits = () => {
         <h1 className="nucoin_services-heading">
           Benefits of using Our Solution
         </h1>
-        <div className="nucoin_services_divider">
-          <span className="nucoin_benifits_divider-2">
+        <div className="nucoin_benifit_divider">
+          <div className="nucoin_benifit-dklfjskldf" />
+          <span className="nucoin_benifit_divider-1" data-aos="fade-right" data-aos-duration="1500" >
             <img
               src="https://nucoin.com.au/assets/images/Block4.png"
               className="nucoin_benifits_divider-2-image"
             />
           </span>
 
-          <span className="nucoin_services_divider-1">
+          <span className="nucoin_benifit_divider-2" data-aos="fade-left" data-aos-duration="1500" >
             <p className="nucoin_service_up">{data.up}</p>
             <div className="nucoin_benifits-listContainer">
               {data.list.map((value, index) => (
@@ -41,6 +42,7 @@ const Benifits = () => {
             </div>
             <p className="nucoin_service_up">{data.down}</p>
           </span>
+          <div className="nucoin_benifit-dklfjskldf" />
         </div>
       </div>
     </div>
