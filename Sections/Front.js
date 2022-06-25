@@ -1,4 +1,11 @@
 import React from "react";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+import Video from "../components/Video";
+
+const DynamicHeader = dynamic(() => import("../components/Video"), {
+  suspense: true,
+});
 
 const Front = () => {
   return (
@@ -37,20 +44,26 @@ const Front = () => {
           </div>
         </div>
       </div>
-
-      <div className="front-main">
-        <h1 className="introduction-text ">
-          Nucoin, the world's first decentralized blockchain inspired by{" "}
-          <a className=" intro-text-artificial-intelligence">
-            Artificial Intelligence
-          </a>
-        </h1>
-
-        <h4 className="hp-fp-100">New Age Of Digital Currency</h4>
-        <a className="hp-fp-101">create Wallet</a>
-        <a className="hp-fp-102">My Wallet</a>
-        <a className="hp-fp-103">Become a Miner</a>
-        <h4 className="hp-fp-100">NuGenesis Platform Documentation</h4>
+      <div className="nucoin_front-mc">
+        <div className="front-main">
+          <h1 className="introduction-text ">
+            Nucoin, the world's first decentralized blockchain inspired by{" "}
+            <a className=" intro-text-artificial-intelligence">
+              Artificial Intelligence
+            </a>
+          </h1>
+          <h4 className="hp-fp-100">New Age Of Digital Currency</h4>
+          <a className="hp-fp-101">create Wallet</a>
+          <a className="hp-fp-102">My Wallet</a>
+          <a className="hp-fp-103">Become a Miner</a>
+          <h4 className="hp-fp-100">NuGenesis Platform Documentation</h4>{" "}
+        </div>
+        <div className="nucoin_front-mcde">
+          {/* <Suspense fallback={`Loading...`}>
+            <DynamicHeader />
+          </Suspense> */}
+          <Video />
+        </div>{" "}
       </div>
     </div>
   );

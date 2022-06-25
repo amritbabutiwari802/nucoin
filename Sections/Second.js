@@ -1,4 +1,19 @@
 import React from "react";
+import { Transition } from "react-transition-group";
+
+const duration = 300;
+
+const defaultStyle = {
+  transition: `margin-top ${duration}ms ease-in-out`,
+  opacity: 0,
+};
+
+const transitionStyles = {
+  entering: { marginTop: "100px" },
+  entered: { marginTop: "0px" },
+  exiting: {},
+  exited: {},
+};
 
 const Second = () => {
   const [clicked, setClicked] = React.useState(1);
@@ -32,7 +47,19 @@ const Second = () => {
         <FlyingCard mt="-85px" />
         <FlyingCard mt="-25px" />{" "}
       </div>
-      <a className="hp-fp-102">RoadMap Board</a>
+
+      <Transition timeout="1" in={true}>
+        {(state) => (
+          <div
+            style={{
+              ...defaultStyle,
+              ...transitionStyles[state],
+            }}
+          >
+            <a className="hp-fp-102 ">RoadMap Board</a>
+          </div>
+        )}
+      </Transition>
     </div>
   );
 };
