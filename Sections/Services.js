@@ -6,7 +6,8 @@ const Services = () => {
       <div className="nucoin_services-title">PROCESS</div>
       <h1 className="nucoin_services-heading">Nucoin Services</h1>
       <div className="nucoin_services_divider">
-        <span className="nucoin_services_divider-1" >
+        <span className="nucoin_services_divider-1" data-aos="fade-left"
+      data-aos-duration="2500">
           <p className="nucoin_service_up">{data.up}</p>
           <div className="nucoin_serives-listContainer">
             {data.list.map((value, index) => (

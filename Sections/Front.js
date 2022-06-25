@@ -45,7 +45,8 @@ const Front = () => {
         </div>
       </div>
       <div className="nucoin_front-mc">
-        <div className="front-main"   >
+        <div className="front-main"  data-aos="fade-right"
+      data-aos-duration="2500" >
           <h1 className="introduction-text ">
             Nucoin, the world's first decentralized blockchain inspired by{" "}
             <a className=" intro-text-artificial-intelligence">

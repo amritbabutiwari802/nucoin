@@ -2,7 +2,8 @@ import React from "react";
 
 const Nugenis = () => {
   return (
-    <div className="nucoin_nugenis_container"  >
+    <div className="nucoin_nugenis_container" data-aos="fade-up"
+    data-aos-duration="1000" >
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
