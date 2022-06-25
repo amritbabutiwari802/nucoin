@@ -45,8 +45,7 @@ const Front = () => {
         </div>
       </div>
       <div className="nucoin_front-mc">
-        <div className="front-main"  data-aos="fade-right"
-      data-aos-duration="2500" >
+        <div className="front-main">
           <h1 className="introduction-text ">
             Nucoin, the world's first decentralized blockchain inspired by{" "}
             <a className=" intro-text-artificial-intelligence">
@@ -60,7 +59,9 @@ const Front = () => {
           <h4 className="hp-fp-100">NuGenesis Platform Documentation</h4>{" "}
         </div>
         <div className="nucoin_front-mcde">
-       
+          {/* <Suspense fallback={`Loading...`}>
+            <DynamicHeader />
+          </Suspense> */}
           <Video />
         </div>{" "}
       </div>

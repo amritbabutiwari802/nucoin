@@ -13,12 +13,12 @@ import Footer from "../Sections/Footer";
 const Home = () => {
   return (
     <div className=" home_container-main">
-      <Front />  {/*
+      <Front />
       <Second />
-      <About /><Services />
-     <Nugenis /> 
-      */}
-      <Imgrow fade1="1"
+      <About />
+      <Nugenis />
+      <Services />
+      <Imgrow
         items={[
           {
             src: "https://nucoin.com.au/assets/images/Block1.png",
@@ -36,7 +36,7 @@ const Home = () => {
       />
 
       <Benifits />
-      <Imgrow fade1="2"
+      <Imgrow
         items={[
           {
             src: "https://nucoin.com.au/assets/images/Block5.png",

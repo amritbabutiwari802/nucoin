@@ -1,17 +1,22 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Transition } from "react-transition-group";
 
-import { useEffect } from "react";
+const duration = 300;
 
+const defaultStyle = {
+  transition: `margin-top ${duration}ms ease-in-out`,
+  opacity: 0,
+};
 
+const transitionStyles = {
+  entering: { marginTop: "100px" },
+  entered: { marginTop: "0px" },
+  exiting: {},
+  exited: {},
+};
 
 const Second = () => {
   const [clicked, setClicked] = React.useState(1);
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
 
   return (
     <div className="nucoin_second-container">
@@ -42,10 +47,19 @@ const Second = () => {
         <FlyingCard mt="-85px" />
         <FlyingCard mt="-25px" />{" "}
       </div>
- 
-  
-            <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="2500">RoadMap Board</a>
-            
+
+      <Transition timeout="1" in={true}>
+        {(state) => (
+          <div
+            style={{
+              ...defaultStyle,
+              ...transitionStyles[state],
+            }}
+          >
+            <a className="hp-fp-102 ">RoadMap Board</a>
+          </div>
+        )}
+      </Transition>
     </div>
   );
 };
@@ -63,9 +77,6 @@ const FlyingCard = (props) => {
         gap: "20px",
         marginTop: props.mt,
       }}
-
-      data-aos="fade-up"
-      data-aos-duration="2500"
     >
       <svg
         class="MuiSvgIcon-root"
