@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Home from "../Page/Home";
 
+
 export default function Index() {
   return <Home />;
 }

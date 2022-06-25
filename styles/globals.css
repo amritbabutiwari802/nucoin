@@ -356,6 +356,10 @@ align-items: center;
 
 }
 
+.nucoin_service-skdj{
+  flex:0.1;
+}
+
 .nucoin_services_divider-1{
   font-size: 19px;
   font-weight: 600;

@@ -6,7 +6,8 @@ const Services = () => {
       <div className="nucoin_services-title">PROCESS</div>
       <h1 className="nucoin_services-heading">Nucoin Services</h1>
       <div className="nucoin_services_divider">
-        <span className="nucoin_services_divider-1">
+   
+        <span className="nucoin_services_divider-1" data-aos="fade-left" data-aos-duration="1500" >
           <p className="nucoin_service_up">{data.up}</p>
           <div className="nucoin_serives-listContainer">
             {data.list.map((value, index) => (
@@ -31,12 +32,13 @@ const Services = () => {
           </div>
           <p className="nucoin_service_up">{data.down}</p>
         </span>
-        <span className="nucoin_services_divider-2">
+        <span className="nucoin_services_divider-2" data-aos="fade-right" data-aos-duration="1500" >
           <img
             src="https://nucoin.com.au/assets/images/Block.png"
             className="nucoin_services_divider-2-image"
           />
         </span>
+       
       </div>
     </div>
   );

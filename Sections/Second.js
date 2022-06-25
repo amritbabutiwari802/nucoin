@@ -1,6 +1,7 @@
 import React from "react";
 import { Transition } from "react-transition-group";
 
+
 const duration = 300;
 
 const defaultStyle = {
@@ -16,6 +17,7 @@ const transitionStyles = {
 };
 
 const Second = () => {
+
   const [clicked, setClicked] = React.useState(1);
 
   return (
@@ -48,18 +50,11 @@ const Second = () => {
         <FlyingCard mt="-25px" />{" "}
       </div>
 
-      <Transition timeout="1" in={true}>
-        {(state) => (
-          <div
-            style={{
-              ...defaultStyle,
-              ...transitionStyles[state],
-            }}
-          >
-            <a className="hp-fp-102 ">RoadMap Board</a>
-          </div>
-        )}
-      </Transition>
+     
+         
+            <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="1500"  >RoadMap Board</a>
+         
+  
     </div>
   );
 };
@@ -77,6 +72,9 @@ const FlyingCard = (props) => {
         gap: "20px",
         marginTop: props.mt,
       }}
+
+      data-aos="fade-up" data-aos-duration="1500"
+
     >
       <svg
         class="MuiSvgIcon-root"
