@@ -2,12 +2,18 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import Video from "../components/Video";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DynamicHeader = dynamic(() => import("../components/Video"), {
   suspense: true,
 });
 
 const Front = () => {
+  React.useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <div className="navbar-parent">
@@ -45,7 +51,7 @@ const Front = () => {
         </div>
       </div>
       <div className="nucoin_front-mc">
-        <div className="front-main">
+        <div className="front-main" data-aos="fade-left" data-aos-duration="1500">
           <h1 className="introduction-text ">
             Nucoin, the world's first decentralized blockchain inspired by{" "}
             <a className=" intro-text-artificial-intelligence">
