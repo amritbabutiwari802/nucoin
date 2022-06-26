@@ -13,6 +13,7 @@ import Footer from "../Sections/Footer";
 const Home = () => {
   return (
     <div className=" home_container-main">
+      <div className=" home-innercontainer-gh45t " > 
       <Front />
       <Second />
       <About />
@@ -82,6 +83,7 @@ const Home = () => {
 
       <Contact />
       <Footer />
+      </div>
     </div>
   );
 };
