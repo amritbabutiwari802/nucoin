@@ -1,7 +1,6 @@
 import React from "react";
 import { Transition } from "react-transition-group";
 
-
 const duration = 300;
 
 const defaultStyle = {
@@ -17,7 +16,6 @@ const transitionStyles = {
 };
 
 const Second = () => {
-
   const [clicked, setClicked] = React.useState(1);
 
   return (
@@ -26,14 +24,41 @@ const Second = () => {
       <span className="nucoin_second-roadmap">Nucoin Roadmap</span>
       <div className="nucoin_second-status">
         {" "}
-        <a className={clicked == 1 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 1
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          All
         </a>{" "}
-        <a className={clicked == 2 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 2
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          Planning
         </a>{" "}
-        <a className={clicked == 3 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 3
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          In progress
+        </a>
+        <a
+          className={
+            clicked == 2
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          completed
         </a>
       </div>
 
@@ -50,11 +75,9 @@ const Second = () => {
         <FlyingCard mt="-25px" />{" "}
       </div>
 
-     
-         
-            <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="1500"  >RoadMap Board</a>
-         
-  
+      <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="1500">
+        RoadMap Board
+      </a>
     </div>
   );
 };
@@ -72,9 +95,8 @@ const FlyingCard = (props) => {
         gap: "20px",
         marginTop: props.mt,
       }}
-
-      data-aos="fade-up" data-aos-duration="1500"
-
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       <svg
         class="MuiSvgIcon-root"

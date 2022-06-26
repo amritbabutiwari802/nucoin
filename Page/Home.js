@@ -33,7 +33,6 @@ const Home = () => {
             text: "Artificial Intelligence",
           },
         ]}
-
         fade1="1"
       />
 
@@ -53,9 +52,7 @@ const Home = () => {
             text: "World Coverage",
           },
         ]}
-
         fade1="2"
-
       />
 
       <Teams

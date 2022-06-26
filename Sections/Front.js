@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Video from "../components/Video";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { slide as Menu } from "react-burger-menu";
 
 const DynamicHeader = dynamic(() => import("../components/Video"), {
   suspense: true,
@@ -14,6 +15,9 @@ const Front = () => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const [mobilemenu, setmenu] = React.useState(true);
+
   return (
     <div>
       <div className="navbar-parent">
@@ -49,9 +53,36 @@ const Front = () => {
             </svg>
           </div>
         </div>
+        <div
+          className="nucoin_front-mobile-menu"
+          onClick={() => {
+            setmenu(!mobilemenu);
+          }}
+        >
+          <div
+            className={`transition-anim1 ${
+              mobilemenu ? "nucoin_front-mobile-line-123sd1" : "rotate-anti45"
+            }`}
+          />
+          <div
+            className={`transition-anim ${
+              mobilemenu ? "nucoin_front-mobile-line-123sd2" : "display-gone"
+            }`}
+          />
+          <div
+            className={`transition-anim1 ${
+              mobilemenu ? "nucoin_front-mobile-line-123sd3" : "rotate-45"
+            }`}
+          />
+        </div>
       </div>
+
       <div className="nucoin_front-mc">
-        <div className="front-main" data-aos="fade-left" data-aos-duration="1500">
+        <div
+          className="front-main"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <h1 className="introduction-text ">
             Nucoin, the world's first decentralized blockchain inspired by{" "}
             <a className=" intro-text-artificial-intelligence">
@@ -68,7 +99,7 @@ const Front = () => {
           {/* <Suspense fallback={`Loading...`}>
             <DynamicHeader />
           </Suspense> */}
-          <Video />
+          {/* <Video /> */}
         </div>{" "}
       </div>
     </div>
