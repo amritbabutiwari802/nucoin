@@ -148,7 +148,7 @@ const Front = (props) => {
             </div>
 
             {!mobilemenu && (
-              <div className="mobile-navbar">
+              <div className="mobile-navbar" data-aos="fade-left">
                 <a href="#id1" className=" mobile-menu ">
                   Home
                 </a>
