@@ -23,7 +23,7 @@ const Imgrow = (props) => {
           data-aos-duration="2500"
         >
           <img src={value.src} className="nucoin_imgrow-image" />
-          <span className="nucoin_imgrow-text">{value.text}</span>
+          <p className="nucoin_imgrow-text">{value.text}</p>
         </a>
       ))}
     </div>
