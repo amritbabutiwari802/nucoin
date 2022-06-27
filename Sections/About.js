@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "../ComponentsX/Video";
+import Video from "../ComponentsX/VIdeo";
 
 const About = (props) => {
   return (
