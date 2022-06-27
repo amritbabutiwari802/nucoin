@@ -2,7 +2,7 @@ import React from "react";
 
 const Imgrow = (props) => {
   return (
-    <div className="nucoin_imgrow-container">
+    <div className="nucoin_imgrow-container" ref={props.refx}>
       {props.items.map((value, index) => (
         <a
           key={value.src + index}

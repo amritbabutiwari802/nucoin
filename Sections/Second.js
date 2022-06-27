@@ -15,11 +15,11 @@ const transitionStyles = {
   exited: {},
 };
 
-const Second = () => {
+const Second = (props) => {
   const [clicked, setClicked] = React.useState(1);
 
   return (
-    <div className="nucoin_second-container">
+    <div className="nucoin_second-container" ref={props.refx}>
       <span className="nucoin_second-progress">PROGESS</span>
       <span className="nucoin_second-roadmap">Nucoin Roadmap</span>
       <div className="nucoin_second-status">
@@ -99,7 +99,7 @@ const FlyingCard = (props) => {
       data-aos-duration="1500"
     >
       <svg
-        class="MuiSvgIcon-root"
+        className="MuiSvgIcon-root"
         style={{ fill: "#3AF8F3", height: "25px", width: "25px" }}
         focusable="false"
         viewBox="0 0 24 24"

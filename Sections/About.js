@@ -1,9 +1,13 @@
 import React from "react";
 import Video from "../components/Video";
 
-const About = () => {
+const About = (props) => {
   return (
-    <div style={{ display: "flex" }} className="nucoin_about-container">
+    <div
+      style={{ display: "flex" }}
+      className="nucoin_about-container"
+      ref={props.refx}
+    >
       <div
         style={{ flex: "1" }}
         data-aos="fade-right"

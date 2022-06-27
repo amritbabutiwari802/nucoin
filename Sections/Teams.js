@@ -2,7 +2,7 @@ import React from "react";
 
 const Teams = (props) => {
   return (
-    <div className="nucoin_teams-container">
+    <div className="nucoin_teams-container" ref={props.refx}>
       <div className="nucoin_services-title">OUR EXPERTS</div>
       <h1 className="nucoin_services-heading">Team Members</h1>
 

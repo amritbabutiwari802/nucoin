@@ -10,17 +10,24 @@ const DynamicHeader = dynamic(() => import("../components/Video"), {
   suspense: true,
 });
 
-const Front = () => {
+const Front = (props) => {
   React.useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
   const [mobilemenu, setmenu] = React.useState(true);
+  const [ismobile, setmobile] = React.useState(false);
+
+  React.useEffect(() => {
+    if (typeof window != "undefined" && window.innerWidth < 1250) {
+      setmobile(true);
+    }
+  }, []);
 
   return (
     <div>
-      <div className="navbar-parent">
+      <div className="navbar-parent" ref={props.refx}>
         <a className="name_logo">
           <span>NUC</span>
 
@@ -30,12 +37,54 @@ const Front = () => {
         </a>
 
         <div className="main-navbar">
-          <a className="nav-item-s">Home</a>
-          <a className="nav-item-s">Roadmap</a>
-          <a className="nav-item-s">Aboutus</a>
-          <a className="nav-item-s">Services</a>
-          <a className="nav-item-s">Team</a>
-          <a className="nav-item-s">Contact</a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(1);
+            }}
+          >
+            Home
+          </a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(2);
+            }}
+          >
+            Roadmap
+          </a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(3);
+            }}
+          >
+            Aboutus
+          </a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(4);
+            }}
+          >
+            Services
+          </a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(5);
+            }}
+          >
+            Team
+          </a>
+          <a
+            className="nav-item-s"
+            onClick={() => {
+              props.handleSection(6);
+            }}
+          >
+            Contact
+          </a>
           <a className="nav-item-s">Explorer</a>
           <a className="nav-item-s">Login</a>
           <a className="nav-item-s">SignUp</a>
@@ -53,28 +102,68 @@ const Front = () => {
             </svg>
           </div>
         </div>
-        <div
-          className="nucoin_front-mobile-menu"
-          onClick={() => {
-            setmenu(!mobilemenu);
-          }}
-        >
+
+        {ismobile && (
           <div
-            className={`transition-anim1 ${
-              mobilemenu ? "nucoin_front-mobile-line-123sd1" : "rotate-anti45"
-            }`}
-          />
-          <div
-            className={`transition-anim ${
-              mobilemenu ? "nucoin_front-mobile-line-123sd2" : "display-gone"
-            }`}
-          />
-          <div
-            className={`transition-anim1 ${
-              mobilemenu ? "nucoin_front-mobile-line-123sd3" : "rotate-45"
-            }`}
-          />
-        </div>
+            className={
+              mobilemenu
+                ? "nucoin_front-mobile-menucontainer-closed"
+                : "nucoin_front-mobile-menucontainer "
+            }
+          >
+            <div
+              className={`nucoin_front-mobile-menu ${
+                mobilemenu
+                  ? "nucoin_front-mobile-menu-closed"
+                  : "nucoin_front-mobile-menu-open"
+              }`}
+              onClick={() => {
+                setmenu(!mobilemenu);
+              }}
+              style={{
+                position: mobilemenu ? "relative" : "fixed",
+
+                zIndex: "4",
+              }}
+            >
+              <div
+                className={`transition-anim1 ${
+                  mobilemenu
+                    ? "nucoin_front-mobile-line-123sd1"
+                    : "rotate-anti45"
+                }`}
+              />
+              <div
+                className={`transition-anim ${
+                  mobilemenu
+                    ? "nucoin_front-mobile-line-123sd2"
+                    : "display-gone"
+                }`}
+              />
+              <div
+                className={`transition-anim1 ${
+                  mobilemenu ? "nucoin_front-mobile-line-123sd3" : "rotate-45"
+                }`}
+              />
+            </div>
+
+            {!mobilemenu && (
+              <div className="mobile-navbar">
+                <a href="#id1" className=" mobile-menu ">
+                  Home
+                </a>
+                <a className="mobile-menu">Roadmap</a>
+                <a className="mobile-menu">Aboutus</a>
+                <a className="mobile-menu">Services</a>
+                <a className="mobile-menu">Team</a>
+                <a className="mobile-menu">Contact</a>
+                <a className="mobile-menu">Explorer</a>
+                <a className="mobile-menu">Login</a>
+                <a className="mobile-menu">SignUp</a>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="nucoin_front-mc">

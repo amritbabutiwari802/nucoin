@@ -1,8 +1,8 @@
 import React from "react";
 
-const Benifits = () => {
+const Benifits = (props) => {
   return (
-    <div>
+    <div ref={props.refx}>
       <div>
         <div className="nucoin_services-title">What You Get</div>
         <h1 className="nucoin_services-heading">
@@ -36,7 +36,7 @@ const Benifits = () => {
                     viewBox="0 0 24 24"
                     width="16px"
                     fill="#1FF8F2"
-                    class="navigation-icon"
+                    className="navigation-icon"
                     style={{ transform: "rotate(90deg)", marginRight: "25px" }}
                   >
                     <path d="M0 0h24v24H0z" fill="none"></path>

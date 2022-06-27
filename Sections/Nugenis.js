@@ -1,8 +1,13 @@
 import React from "react";
 
-const Nugenis = () => {
+const Nugenis = (props) => {
   return (
-    <div className="nucoin_nugenis_container" data-aos="fade-up" data-aos-duration="1500" >
+    <div
+      className="nucoin_nugenis_container"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      ref={props.refx}
+    >
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,9 +22,9 @@ const Nugenis = () => {
         </svg>
       </a>
 
-      <div class=" nucoin_nugenis-video-title">Nugenesis</div>
+      <div className=" nucoin_nugenis-video-title">Nugenesis</div>
 
-      <div class="nucoin_nugenis-video-description">
+      <div className="nucoin_nugenis-video-description">
         Enhancing blockchain protocol. +440 faster and more efficient then the
         competition. Expanding blockchain network.
       </div>
