@@ -1,13 +1,28 @@
 import React from "react";
 import Video from "../components/Video";
 
-const About = () => {
+const About = (props) => {
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ flex: "1" }} data-aos="fade-right"
-      data-aos-duration="1500">   <Video /></div>
-      <div style={{ flex: "1" }}   data-aos="fade-left"
-      data-aos-duration="1500">
+    <div
+      style={{ display: "flex" }}
+      className="nucoin_about-container"
+      ref={props.refx}
+    >
+      <div
+        style={{ flex: "1" }}
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        className="nucoin_about-video-box"
+      >
+        {" "}
+        {/* <Video />{" "} */}
+      </div>
+      <div
+        style={{ flex: "1" }}
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        className="nucoin_about-text"
+      >
         <h4 className="nucoin_about_ab">Business Solution</h4>
         <h1 className="nucoin_about_about">About NuCoin</h1>
         <p className="nucoin_about_p">
@@ -19,7 +34,7 @@ const About = () => {
           be eliminated. Security had to be enhanced, its integrity underscored
           by Artificial Intelligence (AI) and carbon neutral in its efficiency.
         </p>
-        <a className="hp-fp-110">Road more</a>
+        <a className="hp-fp-110 nucoin_about-button">Road more</a>
       </div>
     </div>
   );

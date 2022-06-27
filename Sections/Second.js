@@ -1,32 +1,64 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Transition } from "react-transition-group";
 
-import { useEffect } from "react";
+const duration = 300;
 
+const defaultStyle = {
+  transition: `margin-top ${duration}ms ease-in-out`,
+  opacity: 0,
+};
 
+const transitionStyles = {
+  entering: { marginTop: "100px" },
+  entered: { marginTop: "0px" },
+  exiting: {},
+  exited: {},
+};
 
-const Second = () => {
+const Second = (props) => {
   const [clicked, setClicked] = React.useState(1);
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
 
   return (
-    <div className="nucoin_second-container">
+    <div className="nucoin_second-container" ref={props.refx}>
       <span className="nucoin_second-progress">PROGESS</span>
       <span className="nucoin_second-roadmap">Nucoin Roadmap</span>
       <div className="nucoin_second-status">
         {" "}
-        <a className={clicked == 1 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 1
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          All
         </a>{" "}
-        <a className={clicked == 2 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 2
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          Planning
         </a>{" "}
-        <a className={clicked == 3 ? "hp-fp-102" : "nucoin_hp-fb-notselected"}>
-          My Wallet
+        <a
+          className={
+            clicked == 3
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          In progress
+        </a>
+        <a
+          className={
+            clicked == 2
+              ? "hp-fp-102 nucoin_second-button"
+              : "nucoin_hp-fb-notselected nucoin_second-button"
+          }
+        >
+          completed
         </a>
       </div>
 
@@ -42,10 +74,10 @@ const Second = () => {
         <FlyingCard mt="-85px" />
         <FlyingCard mt="-25px" />{" "}
       </div>
- 
-  
-            <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="2500">RoadMap Board</a>
-            
+
+      <a className="hp-fp-102 " data-aos="fade-up" data-aos-duration="1500">
+        RoadMap Board
+      </a>
     </div>
   );
 };
@@ -63,12 +95,11 @@ const FlyingCard = (props) => {
         gap: "20px",
         marginTop: props.mt,
       }}
-
       data-aos="fade-up"
-      data-aos-duration="2500"
+      data-aos-duration="1500"
     >
       <svg
-        class="MuiSvgIcon-root"
+        className="MuiSvgIcon-root"
         style={{ fill: "#3AF8F3", height: "25px", width: "25px" }}
         focusable="false"
         viewBox="0 0 24 24"

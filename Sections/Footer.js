@@ -19,7 +19,7 @@ export default Footer;
 
 const ASection = (props) => {
   return (
-    <div className="nucoin_footer-asection-container">
+    <div className="nucoin_footer-asection-container" ref={props.refx}>
       <div className="nucoin_footer-asection">
         <a className="name_logo">
           <span>NUC</span>
@@ -59,7 +59,7 @@ const ASection = (props) => {
               focusable="false"
               data-prefix="fab"
               data-icon="facebook-f"
-              class="svg-inline--fa fa-facebook-f fa-w-10"
+              className="svg-inline--fa fa-facebook-f fa-w-10"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -78,7 +78,7 @@ const ASection = (props) => {
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              class="svg-inline--fa fa-twitter fa-w-16"
+              className="svg-inline--fa fa-twitter fa-w-16"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -97,7 +97,7 @@ const ASection = (props) => {
               focusable="false"
               data-prefix="fab"
               data-icon="youtube"
-              class="svg-inline--fa fa-youtube fa-w-18"
+              className="svg-inline--fa fa-youtube fa-w-18"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
@@ -124,7 +124,7 @@ const ASection = (props) => {
           </span>
         </div>
         <div className="nucoin_footer-ax6">Install App to Go</div>
-        <figure class="nucoin_footer-store-box">
+        <figure className="nucoin_footer-store-box">
           <span
             href="https://apps.apple.com/us/app/nucoin/id1617291895"
             target="_blank"

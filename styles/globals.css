@@ -19,8 +19,166 @@ a {
 
 
 
+.nucoin_player_v_1{
+  object-fit:fill;
+
+  outline: none;
+
+}
 
 
+.nucoin_front-mobile-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  
+
+}
+
+.nucoin_front-mobile-menu-open{
+transform: skewX(16deg);
+right: 70px;
+top:70px;
+}
+
+.nucoin_front-mobile-menu-closed{
+  position: relative !important;
+}
+
+.nucoin_front-mobile-line-123sd1{
+  width:28px;
+  height:4px;
+  background-color: black;
+  margin-left: 2px;
+ 
+ 
+}
+ 
+.nucoin_front-mobile-line-123sd2{
+  width:28px;
+  height:4px;
+  background-color: black;
+
+ 
+ 
+}
+
+.nucoin_front-mobile-line-123sd3{
+  width:28px;
+  height:4px;
+  background-color: black;
+  margin-left: 2px;
+
+
+  
+  
+}
+
+.rotate-45{
+  width:28px;
+  height:4px;
+  background-color: black;
+  transform: rotate(45deg);
+  margin-top: -8px;
+  position: relative;
+  z-index: 2;
+}
+
+.rotate-anti45{
+  position: relative;
+  width:28px;
+  height:4px;
+  background-color: black;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+
+.display-gone{
+  display: none;
+}
+
+.transition-anim{
+  transition: display 500ms;
+  
+}
+
+.transition-anim1{
+  transition: transform 500ms;
+}
+
+.mobile-navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 17px;
+  font-weight: 700;
+ 
+}
+
+.mobile-menu{
+  color: #353535 !important;
+
+}
+
+@media (max-width:1250px){
+  .nucoin_front-mobile-menucontainer{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0px;
+    background-color: #FEDC2A;
+    transform: skewX(-16deg);
+    margin-left: -10%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+
+.nucoin_front-mobile-menucontainer-closed{
+
+width:91%;
+  position:relative;
+  top:0px;
+ 
+display: flex;
+justify-content: flex-end;
+
+ 
+  
+ 
+}
+
+}
+
+@media (max-width:700px){
+  .nucoin_front-mobile-menucontainer{
+    height:100vh;
+  width: 100vw;
+    position:fixed;
+    top:0px;
+    background-color: #FEDC2A;
+    transform: skewX(-10deg);
+    margin-left: -10%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+}
+
+
+@media only screen and (min-width:1250px) {
 /* for home page */
 .home_container-main{
 
@@ -28,6 +186,7 @@ a {
   padding-left: 55px;
   padding-right:55px;
   padding-top:55px;
+  overflow-x: hidden;
 }
 
 /*homepage sections */
@@ -80,6 +239,10 @@ text-align: left;
 border-radius: 100px;
 width: 30px;
 height: 30px;
+}
+
+.nucoin_front-mobile-menu{
+  display: none !important;
 }
 
 .front-main{
@@ -269,7 +432,7 @@ align-items: center;
   justify-content: space-between;
 }
 
-.move_up_anim_1{
+.move_up_anim_1:i{
   margin-top: 0;
   animation-name: buttom-up;
   animation-duration: 2s;
@@ -405,6 +568,11 @@ line-height: 1.3;
   padding-bottom: 55px;
 }
 
+.nucoin_imgrow-item-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .nucoin_imgrow-text{
   text-align: center;
   font-size: 19px;
@@ -420,12 +588,31 @@ line-height: 1.3;
 
 /*benifits */
 
-.nucoin_benifits_divider-2{
+.nucoin_benifit_divider{
+  display: flex;
+}
+
+.nucoin_benifits_divider-1{
   flex:1;
-  padding-right: 100px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.nucoin_benifit-dklfjskldf{
+  flex:0.1;
+}
+
+.nucoin_benifit_divider-2{
+
+
+
+  font-size: 19px;
+  font-weight: 600;
+line-height: 1.3;
+  flex:1
 }
 
 .nucoin_benifits_divider-2-image{
@@ -442,7 +629,7 @@ line-height: 1.3;
 }
 
 .nucoin_team-cardbox{
-  display: flex;
+  display: flex ;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -723,3 +910,2408 @@ font-size: 19px;
   text-align: center;
   font-size: 19px;
 }
+  
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width:1250px){
+
+
+/* for home page */
+.home_container-main{
+
+  background-color:#F3F2F3;
+  padding-left: 55px;
+  padding-right:55px;
+  padding-top:55px;
+  overflow-x: hidden;
+}
+
+/*homepage sections */
+/*front*/
+
+.name_logo{
+display: flex;
+align-items: center;
+font:normal normal bold 38px/44px "Poppins", sans-serif;
+box-sizing: border-box;
+cursor: pointer;
+white-space: nowrap;
+color: var(--text-color);
+font-weight: 700;
+}
+
+.navbar-parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-navbar{
+  display: none;
+  gap:19px;
+  opacity: 0.7;
+cursor: pointer;
+text-transform: uppercase;
+font: normal normal 600 15px/23px Poppins;
+letter-spacing: 0px;
+box-sizing: border-box;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 1rem;
+font-weight: 700;
+line-height: 1.5;
+color:#000000;
+text-align: left;
+}
+
+.nav-item-s{
+  color:black;
+}
+
+.nav-image1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: black;
+border-radius: 100px;
+width: 30px;
+height: 30px;
+}
+
+.front-main{
+  width: 80%;
+  padding-top: 40px;
+flex: 1;
+}
+
+.nucoin_front-mcde{
+
+display: none;
+
+
+
+ 
+
+}
+
+.nucoin_front-mc{
+  
+}
+
+.introduction-text{
+font-size: 61px;
+text-align: left;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+font-weight: 700;
+line-height: 1.0;
+color: #212529;
+text-align: left;
+}
+
+.intro-text-artificial-intelligence{
+font-size: 31px;
+border-width:1px;
+border-style: solid;
+border-color: black;
+border-radius: 7px;
+height:100% !important;
+font-weight: 400;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+cursor: none;
+
+}
+
+.hp-fp-100{
+  box-sizing: border-box;
+ font-size: 22px;
+  margin-top: 31px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 31px;
+}
+
+.hp-fp-102:hover{
+  box-shadow: 0 0 16px #aa2fdc;
+  cursor: pointer;
+}
+
+.hp-fp-101:hover{
+  box-shadow: 0 0 16px #11cff3;
+  cursor: pointer;
+}
+
+.hp-fp-101{
+  background: transparent linear-gradient(245deg, #69efb7 0%, #11cff3 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  min-width: 150px;
+  text-align: center;
+}
+
+.hp-fp-102{
+  background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+ 
+  min-width: 150px;
+  text-align: center;
+}
+
+.hp-fp-103{
+  background: #d10469;
+border-radius: 3px;
+color: #fff;
+font-weight: bold;
+padding: 10px 0px;
+display: inline-block;
+margin-right: 10px;
+-webkit-box-shadow: 0 0 1px transparent;
+box-shadow: 0 0 1px transparent;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+min-width: 150px;
+text-align: center;
+}
+
+.hp-fp-103:hover{
+  box-shadow: 0 0 16px #d10469;
+  cursor: pointer;
+}
+
+.dropdown-101{
+  background-color: white !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  color:black !important;
+}
+
+
+
+
+/*for second */
+
+
+.nucoin_hp-fb-notselected{
+ 
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #353434d3;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+   
+    min-width: 150px;
+    text-align: center;
+
+}
+
+.nucoin_second-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.nucoin_second-progress{
+  font-size: 19px;
+  color:#1FF8F2;
+  font-weight: 600;
+}
+
+.nucoin_second-roadmap{
+  font-size: 46px;
+  font-weight: 700;
+  margin-top:0px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.nucoin_second-timeline-img{
+
+  width:100%;
+  margin-top:55px;
+
+}
+
+.nucoin_second_events_container{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.move_up_anim_1:i{
+  margin-top: 0;
+  animation-name: buttom-up;
+  animation-duration: 2s;
+}
+
+@keyframes buttom-up{
+  from {margin-top:100px;}
+  to{margin-top: 0px;}
+
+}
+
+
+/*about */
+.nucoin_about_ab{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+}
+.nucoin_about_about{
+  font-size: 46px;
+  font-weight: 700;
+  margin-top:-40px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.nucoin_about_p{
+  font-size:20px;
+
+}
+
+.hp-fp-110{
+  background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  min-width: 150px;
+  text-align: center;  
+}
+
+.hp-fp-110:hover{
+  box-shadow: 0 0 16px #aa2fdc;
+  cursor: pointer;
+
+}
+
+.nucoin_nugenis_container{
+
+  background-color: #3D339A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:40px;
+}
+
+.nucoin_nugenis-video-title{
+  box-sizing: border-box;
+  margin-top:10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color:white;
+}
+
+.nucoin_nugenis-video-description{
+ 
+  color:white;
+  font-size: 19px;
+  margin-top: 11px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.nucoin_services_divider{
+  display:flex;
+
+}
+
+.nucoin_services_divider-1{
+  font-size: 19px;
+  font-weight: 600;
+line-height: 1.3;
+  flex:1
+}
+
+.nucoin_services_divider-2{
+  flex:0.8;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nucoin_services_divider-2-image{
+  width: 100%;
+}
+
+.nucoin_serives-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nucoin_service_up{
+
+}
+
+.nucoin_services-heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:-4px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+.nucoin_services-title{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nucoin_imgrow-container{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+
+.nucoin_imgrow-text{
+  text-align: center;
+  font-size: 19px;
+ 
+}
+
+.nucoin_imgrow-image{
+  width: 250px;
+  height:200px;
+}
+
+.nucoin_imgrow-item-container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*benifits */
+
+.nucoin_benifit_divider{
+  display: flex;
+}
+
+.nucoin_benifit_divider-1{
+  flex:0.8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.nucoin_benifit_divider-2{
+
+
+
+  font-size: 19px;
+  font-weight: 600;
+line-height: 1.3;
+  flex:1
+}
+
+.nucoin_benifits_divider-2-image{
+width: 100%;
+}
+
+.nucoin_benifits-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.nucoin_team-cardbox{
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 25px;
+ 
+}
+
+.nucoin_team-image{
+width:100%;
+height: 250px;
+object-fit:cover;
+object-position: 0% 0%;
+margin-top: 0px;
+}
+
+.nucoin_team_cardcontainer{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+}
+
+.nucoin_team_card{
+  
+ 
+  background-color: white;
+  padding-bottom: 25px;
+
+}
+
+.nucoin_team-text{
+  text-align: center;
+  overflow: hidden;
+}
+
+.nucoin_teams-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_teams-button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* contact */
+.nucoin_contact_name{
+  width:48%;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_container{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_contact_name::content{
+  box-shadow: none !important;
+}
+
+.nucoin_contact_email{
+  width:48%;
+  height:49px;
+  margin-left: 4%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_address{
+  width:100%;
+  height:49px;
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_message{
+  width:100%;
+  height:250px;
+  margin-top:10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+}
+
+.nucoin_teams-button{
+  text-align: center;
+  align-self: center;
+}
+
+.nucoin_contact_name_email{
+  width:100%;
+}
+
+.nucoin_contact_heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:10px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+/* footer */
+
+.nucoin_footer-appstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-playstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-appstore{
+  display: flex;
+  font-size: 10px;
+  line-height: 0.2;
+  align-items: center;
+  gap:4px;
+  background-color: black;
+  width:140px;
+  padding-left: 16px;
+  border-radius: 10px;
+  color: white;
+  fill: white;
+}
+
+.nucoin_footer-playstore{
+  display: flex;
+}
+
+.nucoin_footer-store-text{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.nucoin_footer-store-box{
+  display: flex;
+  gap:25px;
+}
+
+.nucoin_footer-asection-container{
+  display: flex;
+  gap:25px;
+}
+
+.nucoin_footer-asection{
+  flex: 1;
+  padding-right: 55px;
+}
+
+.nucoin_footer-ax1{
+ font-size: 22px;
+}
+
+.nucoin_footer-ax2{
+font-size: 14px;
+line-height: 1.6;
+font-weight: 600;
+
+}
+
+.nucoin_footer-ax33{
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.nucoin_footer-ax3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 19px;
+  font-weight: 600;
+}
+
+.nucoin_footer-ax4{
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nucoin_footer-ax5{
+  border-style: none;
+  height:49px;
+  background-color: inherit;
+  flex: 1;
+  outline: none;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+
+}
+
+.nucoin_footer-ax6{
+font-size: 19px;
+}
+
+.nucoin_footer-ax7{
+  display:flex;
+  gap:4px;
+  margin-top: 10px;
+}
+
+
+
+/*footer link */
+.nucoin_footer_skdfkjsd{
+  display: flex ;
+  align-items: center;
+  gap:10px;
+  line-height: 1.3;
+  margin-top: -16px;
+}
+
+
+.nucoin_footer-link-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nucin_footer-skjdfakjsf{
+  margin-top: 31px;
+}
+
+.nucoin-hr{
+  height: 1px !important;
+  width:100%;
+  background-color: #3f3e3e;
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+.nucoin_footer-jsdfk{
+  text-align: center;
+  font-size: 19px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:760px) {
+ /* for home page */
+.home_container-main{
+
+  background-color:#F3F2F3;
+  padding-left: 25px;
+  padding-right:25px;
+  padding-top:25px;
+  overflow-x: hidden;
+}
+
+/*homepage sections */
+/*front*/
+
+.name_logo{
+display: flex;
+align-items: center;
+font:normal normal bold 38px/44px "Poppins", sans-serif;
+box-sizing: border-box;
+cursor: pointer;
+white-space: nowrap;
+color: var(--text-color);
+font-weight: 700;
+}
+
+.navbar-parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-navbar{
+  display: none;
+  gap:19px;
+  opacity: 0.7;
+cursor: pointer;
+text-transform: uppercase;
+font: normal normal 600 15px/23px Poppins;
+letter-spacing: 0px;
+box-sizing: border-box;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 1rem;
+font-weight: 700;
+line-height: 1.5;
+color:#000000;
+text-align: left;
+}
+
+.nav-item-s{
+  color:black;
+}
+
+.nav-image1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: black;
+border-radius: 100px;
+width: 30px;
+height: 30px;
+}
+
+.front-main{
+ 
+  padding-top: 25px;
+
+}
+
+.nucoin_front-mcde{
+
+
+
+
+
+ 
+
+}
+
+.nucoin_front-mc{
+ 
+}
+
+.introduction-text{
+font-size: 46px;
+text-align: left;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+font-weight: 700;
+line-height: 1.2;
+color: #212529;
+text-align: left;
+}
+
+.intro-text-artificial-intelligence{
+  display: inline-block;
+font-size: 25px;
+border-width:1px;
+border-style: solid;
+border-color: black;
+border-radius: 7px;
+height:70% !important;
+font-weight: 400;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+cursor: none;
+
+}
+
+.hp-fp-100{
+  box-sizing: border-box;
+ font-size: 22px;
+  margin-top: 31px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 31px;
+}
+
+.hp-fp-102:hover{
+  box-shadow: 0 0 16px #aa2fdc;
+  cursor: pointer;
+}
+
+.hp-fp-101:hover{
+  box-shadow: 0 0 16px #11cff3;
+  cursor: pointer;
+}
+
+.hp-fp-101{
+  background: transparent linear-gradient(245deg, #69efb7 0%, #11cff3 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  min-width: 150px;
+  text-align: center;
+}
+
+.hp-fp-102{
+  background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+ 
+  min-width: 150px;
+  text-align: center;
+}
+
+.hp-fp-103{
+  background: #d10469;
+border-radius: 3px;
+color: #fff;
+font-weight: bold;
+padding: 10px 0px;
+display: inline-block;
+margin-right: 10px;
+-webkit-box-shadow: 0 0 1px transparent;
+box-shadow: 0 0 1px transparent;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+min-width: 150px;
+text-align: center;
+}
+
+.hp-fp-103:hover{
+  box-shadow: 0 0 16px #d10469;
+  cursor: pointer;
+}
+
+.dropdown-101{
+  background-color: white !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  color:black !important;
+}
+
+
+
+
+/*for second */
+
+
+.nucoin_hp-fb-notselected{
+ 
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #353434d3;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+   
+    min-width: 150px;
+    text-align: center;
+
+}
+
+.nucoin_second-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.nucoin_second-button{
+  margin-bottom: 10px;
+  font-size: 13px;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+ 
+  min-width: 100px;
+  cursor: pointer;
+}
+
+
+
+.nucoin_second-progress{
+  font-size: 19px;
+  color:#1FF8F2;
+  font-weight: 600;
+}
+
+.nucoin_second-roadmap{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:0px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.nucoin_second-timeline-img{
+
+  width:100%;
+  margin-top:55px;
+
+}
+
+.nucoin_second_events_container{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.move_up_anim_1:i{
+  margin-top: 0;
+  animation-name: buttom-up;
+  animation-duration: 2s;
+}
+
+@keyframes buttom-up{
+  from {margin-top:100px;}
+  to{margin-top: 0px;}
+
+}
+
+
+/*about */
+
+.nucoin_about-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_about_ab{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+  text-align: center;
+}
+.nucoin_about_about{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:-40px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.nucoin_about_p{
+  font-size:19px;
+  text-align: center;
+
+}
+
+.nucoin_about-video-box{
+  display: none;
+}
+
+.nucoin_about-button{
+  text-align: center;
+}
+
+
+
+.hp-fp-110{
+  background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  min-width: 150px;
+  text-align: center;  
+}
+
+.hp-fp-110:hover{
+  box-shadow: 0 0 16px #aa2fdc;
+  cursor: pointer;
+
+}
+
+.nucoin_nugenis_container{
+
+  background-color: #3D339A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+}
+
+.nucoin_nugenis-video-title{
+  box-sizing: border-box;
+  margin-top:10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color:white;
+}
+
+.nucoin_nugenis-video-description{
+ 
+  color:white;
+  font-size: 19px;
+  margin-top: 11px;
+  margin-bottom: 70px;
+}
+
+.nucoin_services_divider{
+  display:flex;
+
+}
+
+.nucoin_services_divider-1{
+  font-size: 19px;
+  font-weight: 500;
+line-height: 1.3;
+  flex:1
+}
+
+.nucoin_services_divider-2{
+  display: none;
+}
+
+.nucoin_serives-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nucoin_service_up{
+
+}
+
+.nucoin_services-heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:-4px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+.nucoin_services-title{
+  margin-top: 55px;
+  font-size: 25px;
+  color:#1FF8F2;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nucoin_imgrow-container{
+display: grid;
+grid-template-columns: 1fr 1fr ;
+row-gap: 40px;
+
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+
+.nucoin_imgrow-item-container{
+  flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.nucoin_imgrow-text{
+  text-align: center;
+  font-size: 19px;
+ 
+}
+
+.nucoin_imgrow-image{
+  width: 160px;
+  height:160px;
+}
+
+
+
+/*benifits */
+
+.nucoin_benifit_divider{
+  display: flex;
+}
+
+.nucoin_benifit_divider-1{
+ 
+
+  display: none;
+ 
+
+}
+
+
+
+.nucoin_benifit_divider-2{
+
+
+
+  font-size: 19px;
+  font-weight: 500;
+line-height: 1.3;
+  flex:1
+}
+
+.nucoin_benifits_divider-2-image{
+
+}
+
+.nucoin_benifits-listContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+
+
+
+
+
+@media (min-width:600px) {
+  
+
+
+
+.nucoin_team-cardbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 25px;
+ 
+}
+
+.nucoin_team-image{
+width:100%;
+height: 280px;
+object-fit:cover;
+object-position: 0% 0%;
+margin-top: 0px;
+}
+
+.nucoin_team_cardcontainer{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.nucoin_team_card{
+  
+ 
+  background-color: white;
+  padding-bottom: 25px;
+
+}
+
+.nucoin_team-text{
+  text-align: center;
+  overflow: hidden;
+}
+
+.nucoin_teams-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_teams-button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+}
+
+
+@media  (max-width:600px){
+
+  .nucoin_team-cardbox{
+    display: flex !important;
+   flex-direction: column;
+   gap: 25px;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    row-gap: 25px !important;
+   
+  }
+  
+  .nucoin_team-image{
+  width:100% !important;
+  height: 400px !important;
+  object-fit:cover !important;
+  object-position: 0% 0% !important;
+  margin-top: 0px !important;
+  }
+  
+  .nucoin_team_cardcontainer{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+  }
+  
+  .nucoin_team_card{
+    
+   
+    background-color: white !important;
+    padding-bottom: 25px !important;
+  
+  }
+  
+  .nucoin_team-text{
+    text-align: center !important;
+    overflow: hidden !important;
+  }
+  
+  .nucoin_teams-container{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .nucoin_teams-button{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* contact */
+.nucoin_contact_name{
+  width:100%;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_container{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nucoin_contact_name::content{
+  box-shadow: none !important;
+}
+
+.nucoin_contact_email{
+  width:100%;
+  height:49px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_address{
+  width:100%;
+  height:49px;
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+  
+}
+
+.nucoin_contact_message{
+  width:100%;
+  height:250px;
+  margin-top:10px;
+  border-radius:4px;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-style: solid !important;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+}
+
+.nucoin_teams-button{
+  text-align: center;
+  align-self: center;
+}
+
+.nucoin_contact_name_email{
+  width:100%;
+}
+
+.nucoin_contact_heading{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:10px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+/* footer */
+
+.nucoin_footer-appstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-playstore-img{
+  height:25px;
+  width:25px;
+}
+
+.nucoin_footer-appstore{
+  display: flex;
+  font-size: 10px;
+  line-height: 0.2;
+  align-items: center;
+  gap:4px;
+  background-color: black;
+  width:140px;
+  padding-left: 16px;
+  border-radius: 10px;
+  color: white;
+  fill: white;
+}
+
+.nucoin_footer-playstore{
+  display: flex;
+}
+
+.nucoin_footer-store-text{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.nucoin_footer-store-box{
+  display: flex;
+  gap:25px;
+}
+
+.nucoin_footer-asection-container{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
+
+.nucoin_footer-asection{
+  flex: 1;
+  padding-right: 55px;
+}
+
+.nucoin_footer-ax1{
+ font-size: 22px;
+}
+
+.nucoin_footer-ax2{
+font-size: 14px;
+line-height: 1.6;
+font-weight: 600;
+
+}
+
+.nucoin_footer-ax33{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nucoin_footer-ax3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.nucoin_footer-ax4{
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nucoin_footer-ax5{
+  border-style: none;
+  height:49px;
+  background-color: inherit;
+  flex: 1;
+  outline: none;
+  height:49px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#6d6d6d !important ;
+  font-size: 16px;
+
+}
+
+.nucoin_footer-ax6{
+font-size: 22px;
+font-weight: 700;
+}
+
+.nucoin_footer-ax7{
+  display:flex;
+  gap:4px;
+  margin-top: 10px;
+}
+
+
+
+/*footer link */
+.nucoin_footer_skdfkjsd{
+  display: flex ;
+  align-items: center;
+  gap:10px;
+  line-height: 1.3;
+  margin-top: -16px;
+}
+
+
+.nucoin_footer-link-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.nucin_footer-skjdfakjsf{
+  margin-top: 31px;
+}
+
+.nucoin-hr{
+  height: 1px !important;
+  width:100%;
+  background-color: #3f3e3e;
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+.nucoin_footer-jsdfk{
+  text-align: center;
+  font-size: 16px;
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:760px) and (max-width:991px) {
+  /* for home page */
+ .home_container-main{
+ 
+   background-color:#F3F2F3;
+   padding-left: 25px;
+   padding-right:25px;
+   padding-top:25px;
+   overflow-x: hidden;
+ }
+ 
+ /*homepage sections */
+ /*front*/
+ 
+ .name_logo{
+ display: flex;
+ align-items: center;
+ font:normal normal bold 38px/44px "Poppins", sans-serif;
+ box-sizing: border-box;
+ cursor: pointer;
+ white-space: nowrap;
+ color: var(--text-color);
+ font-weight: 700;
+ }
+ 
+ .navbar-parent{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .main-navbar{
+   display: none;
+   gap:19px;
+   opacity: 0.7;
+ cursor: pointer;
+ text-transform: uppercase;
+ font: normal normal 600 15px/23px Poppins;
+ letter-spacing: 0px;
+ box-sizing: border-box;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ font-size: 1rem;
+ font-weight: 700;
+ line-height: 1.5;
+ color:#000000;
+ text-align: left;
+ }
+ 
+ .nav-item-s{
+   color:black;
+ }
+ 
+ .nav-image1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid;
+   border-color: black;
+ border-radius: 100px;
+ width: 30px;
+ height: 30px;
+ }
+ 
+ .front-main{
+  
+   padding-top: 25px;
+ 
+ }
+ 
+ .nucoin_front-mcde{
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ }
+ 
+ .nucoin_front-mc{
+  
+ }
+ 
+ .introduction-text{
+ font-size: 55px;
+ text-align: left;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ 
+ font-weight: 800;
+ line-height: 1.2;
+ color: #212529;
+ text-align: left;
+ }
+ 
+ .intro-text-artificial-intelligence{
+   display: inline-block;
+ font-size: 25px;
+ border-width:1px;
+ border-style: solid;
+ border-color: black;
+ border-radius: 7px;
+ height:70% !important;
+ font-weight: 400;
+ padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ cursor: none;
+ 
+ }
+ 
+ .hp-fp-100{
+   box-sizing: border-box;
+  font-size: 22px;
+   margin-top: 31px;
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 31px;
+ }
+ 
+ .hp-fp-102:hover{
+   box-shadow: 0 0 16px #aa2fdc;
+   cursor: pointer;
+ }
+ 
+ .hp-fp-101:hover{
+   box-shadow: 0 0 16px #11cff3;
+   cursor: pointer;
+ }
+ 
+ .hp-fp-101{
+   background: transparent linear-gradient(245deg, #69efb7 0%, #11cff3 100%) 0% 0% no-repeat padding-box;
+   border-radius: 3px;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px 0px;
+   display: inline-block;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   -webkit-box-shadow: 0 0 1px transparent;
+   box-shadow: 0 0 1px transparent;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   min-width: 150px;
+   text-align: center;
+ }
+ 
+ .hp-fp-102{
+   background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+   border-radius: 3px;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px 0px;
+   display: inline-block;
+   margin-right: 10px;
+   -webkit-box-shadow: 0 0 1px transparent;
+   box-shadow: 0 0 1px transparent;
+   -webkit-transition-duration: 0.3s;
+  
+   min-width: 150px;
+   text-align: center;
+ }
+ 
+ .hp-fp-103{
+   background: #d10469;
+ border-radius: 3px;
+ color: #fff;
+ font-weight: bold;
+ padding: 10px 0px;
+ display: inline-block;
+ margin-right: 10px;
+ -webkit-box-shadow: 0 0 1px transparent;
+ box-shadow: 0 0 1px transparent;
+ -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ min-width: 150px;
+ text-align: center;
+ }
+ 
+ .hp-fp-103:hover{
+   box-shadow: 0 0 16px #d10469;
+   cursor: pointer;
+ }
+ 
+ .dropdown-101{
+   background-color: white !important;
+   border-style: none !important;
+   box-shadow: none !important;
+   color:black !important;
+ }
+ 
+ 
+ 
+ 
+ /*for second */
+ 
+ 
+ .nucoin_hp-fb-notselected{
+  
+     background-color: white;
+     border-width: 1px;
+     border-style: solid;
+     border-radius: 3px;
+     border-color: #353434d3;
+     color: #212529;
+     font-weight: bold;
+     padding: 10px 0px;
+     display: inline-block;
+     margin-right: 10px;
+     -webkit-box-shadow: 0 0 1px transparent;
+     box-shadow: 0 0 1px transparent;
+     -webkit-transition-duration: 0.3s;
+    
+     min-width: 150px;
+     text-align: center;
+ 
+ }
+ 
+ .nucoin_second-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+ 
+ .nucoin_second-button{
+   margin-bottom: 10px;
+   font-size: 13px;
+   padding: 10px 0px;
+   display: inline-block;
+   margin-right: 10px;
+   -webkit-box-shadow: 0 0 1px transparent;
+   box-shadow: 0 0 1px transparent;
+   -webkit-transition-duration: 0.3s;
+  
+   min-width: 100px;
+   cursor: pointer;
+ }
+ 
+ 
+ 
+ .nucoin_second-progress{
+   font-size: 19px;
+   color:#1FF8F2;
+   font-weight: 600;
+ }
+ 
+ .nucoin_second-roadmap{
+   font-size: 46px;
+   font-weight: 700;
+   margin-top:0px;
+   margin-bottom: 40px;
+   box-sizing: border-box;
+   text-align: center !important;
+ }
+ 
+ .nucoin_second-timeline-img{
+ 
+   width:100%;
+   margin-top:55px;
+ 
+ }
+ 
+ .nucoin_second_events_container{
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .move_up_anim_1:i{
+   margin-top: 0;
+   animation-name: buttom-up;
+   animation-duration: 2s;
+ }
+ 
+ @keyframes buttom-up{
+   from {margin-top:100px;}
+   to{margin-top: 0px;}
+ 
+ }
+ 
+ 
+ /*about */
+ 
+ .nucoin_about-text{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .nucoin_about_ab{
+   margin-top: 55px;
+   font-size: 25px;
+   color:#1FF8F2;
+   font-weight: 600;
+   text-align: center;
+ }
+ .nucoin_about_about{
+   font-size: 46px;
+   font-weight: 700;
+   margin-top:-40px;
+   margin-bottom: 25px;
+   box-sizing: border-box;
+   text-align: center;
+ }
+ 
+ .nucoin_about_p{
+   font-size:19px;
+   text-align: center;
+ 
+ }
+ 
+ .nucoin_about-video-box{
+   display: none;
+ }
+ 
+ .nucoin_about-button{
+   text-align: center;
+ }
+ 
+ 
+ 
+ .hp-fp-110{
+   background: transparent linear-gradient(243deg, #e44f89 0%, #aa2fdc 100%) 0% 0% no-repeat padding-box;
+   border-radius: 3px;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px 0px;
+   display: inline-block;
+   margin-right: 10px;
+   -webkit-box-shadow: 0 0 1px transparent;
+   box-shadow: 0 0 1px transparent;
+   -webkit-transition-duration: 0.3s;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   min-width: 150px;
+   text-align: center;  
+ }
+ 
+ .hp-fp-110:hover{
+   box-shadow: 0 0 16px #aa2fdc;
+   cursor: pointer;
+ 
+ }
+ 
+ .nucoin_nugenis_container{
+ 
+   background-color: #3D339A;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top:40px;
+   padding-left: 25px;
+   padding-right: 25px;
+   text-align: center;
+ }
+ 
+ .nucoin_nugenis-video-title{
+   box-sizing: border-box;
+   margin-top:10px;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 35px;
+   color:white;
+ }
+ 
+ .nucoin_nugenis-video-description{
+  
+   color:white;
+   font-size: 19px;
+   margin-top: 11px;
+   margin-bottom: 70px;
+ }
+ 
+ .nucoin_services_divider{
+   display:flex;
+ 
+ }
+ 
+ .nucoin_services_divider-1{
+   font-size: 19px;
+   font-weight: 500;
+ line-height: 1.3;
+   flex:1
+ }
+ 
+ .nucoin_services_divider-2{
+   display: none;
+ }
+ 
+ .nucoin_serives-listContainer{
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+ 
+ .nucoin_service_up{
+ 
+ }
+ 
+ .nucoin_services-heading{
+   font-size: 46px;
+   font-weight: 700;
+   margin-top:-4px;
+   margin-bottom: 25px;
+   box-sizing: border-box;
+   text-align: center;
+  
+ }
+ 
+ .nucoin_services-title{
+   margin-top: 55px;
+   font-size: 25px;
+   color:#1FF8F2;
+   font-weight: 600;
+   text-align: center;
+ }
+ 
+ .nucoin_imgrow-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr ;
+ row-gap: 40px;
+ 
+   padding-top: 100px;
+   padding-bottom: 55px;
+ }
+ 
+ .nucoin_imgrow-item-container{
+   flex: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+ }
+ 
+ .nucoin_imgrow-text{
+   text-align: center;
+   font-size: 19px;
+  
+ }
+ 
+ .nucoin_imgrow-image{
+   width: 160px;
+   height:160px;
+ }
+ 
+ 
+ 
+ /*benifits */
+ 
+ .nucoin_benifit_divider{
+   display: flex;
+ }
+ 
+ .nucoin_benifit_divider-1{
+  
+ 
+   display: none;
+  
+ 
+ }
+ 
+ 
+ 
+ .nucoin_benifit_divider-2{
+ 
+ 
+ 
+   font-size: 19px;
+   font-weight: 500;
+ line-height: 1.3;
+   flex:1
+ }
+ 
+ .nucoin_benifits_divider-2-image{
+ 
+ }
+ 
+ .nucoin_benifits-listContainer{
+   margin-top: 40px;
+   margin-bottom: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+ 
+ }
+ 
+ .nucoin_team-cardbox{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 25px;
+   row-gap: 25px;
+   flex-wrap: wrap;
+   width: 100%;
+   row-gap: 25px;
+  
+ }
+ 
+ .nucoin_team-image{
+ width:100%;
+ height: 340px;
+ object-fit:cover;
+ object-position: 0% 0%;
+ margin-top: 0px;
+ }
+ 
+ .nucoin_team_cardcontainer{
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 100%;
+ }
+ 
+ .nucoin_team_card{
+   
+  
+   background-color: white;
+   padding-bottom: 25px;
+ 
+ }
+ 
+ .nucoin_team-text{
+   text-align: center;
+   overflow: hidden;
+ }
+ 
+ .nucoin_teams-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .nucoin_teams-button{
+   margin-top: 25px;
+   margin-bottom: 25px;
+ }
+ 
+ /* contact */
+ .nucoin_contact_name{
+   width:100%;
+   height:49px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 4px;
+   box-shadow: none !important;
+   border-color: #ced4da !important;
+   border-style: solid !important;
+   border-width: 1px;
+   color:#6d6d6d !important ;
+   font-size: 16px;
+   
+ }
+ 
+ .nucoin_contact_container{
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .nucoin_contact_name::content{
+   box-shadow: none !important;
+ }
+ 
+ .nucoin_contact_email{
+   width:100%;
+   height:49px;
+   margin-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 4px;
+   box-shadow: none !important;
+   border-color: #ced4da !important;
+   border-style: solid !important;
+   border-width: 1px;
+   color:#6d6d6d !important ;
+   font-size: 16px;
+   
+ }
+ 
+ .nucoin_contact_address{
+   width:100%;
+   height:49px;
+   margin-top:10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius:4px;
+   box-shadow: none !important;
+   border-color: #ced4da !important;
+   border-style: solid !important;
+   border-width: 1px;
+   color:#6d6d6d !important ;
+   font-size: 16px;
+   
+ }
+ 
+ .nucoin_contact_message{
+   width:100%;
+   height:250px;
+   margin-top:10px;
+   border-radius:4px;
+   box-shadow: none !important;
+   border-color: #ced4da !important;
+   border-style: solid !important;
+   border-width: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px ;
+   color:#6d6d6d !important ;
+   font-size: 16px;
+ }
+ 
+ .nucoin_teams-button{
+   text-align: center;
+   align-self: center;
+ }
+ 
+ .nucoin_contact_name_email{
+   width:100%;
+ }
+ 
+ .nucoin_contact_heading{
+   font-size: 40px;
+   font-weight: 700;
+   margin-top:10px;
+   margin-bottom: 25px;
+   box-sizing: border-box;
+   text-align: center;
+ 
+ }
+ 
+ /* footer */
+ 
+ .nucoin_footer-appstore-img{
+   height:25px;
+   width:25px;
+ }
+ 
+ .nucoin_footer-playstore-img{
+   height:25px;
+   width:25px;
+ }
+ 
+ .nucoin_footer-appstore{
+   display: flex;
+   font-size: 10px;
+   line-height: 0.2;
+   align-items: center;
+   gap:4px;
+   background-color: black;
+   width:140px;
+   padding-left: 16px;
+   border-radius: 10px;
+   color: white;
+   fill: white;
+ }
+ 
+ .nucoin_footer-playstore{
+   display: flex;
+ }
+ 
+ .nucoin_footer-store-text{
+   font-size: 13px;
+   font-weight: 600;
+   line-height: 0;
+ }
+ 
+ .nucoin_footer-store-box{
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+ }
+ 
+ .nucoin_footer-asection-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap:25px;
+ 
+ }
+ 
+ .nucoin_footer-asection{
+  
+  
+ }
+ 
+ .nucoin_footer-ax1{
+  font-size: 22px;
+ }
+ 
+ .nucoin_footer-ax2{
+ font-size: 14px;
+ line-height: 1.6;
+ font-weight: 600;
+ 
+ }
+ 
+ .nucoin_footer-ax33{
+   font-size: 25px;
+   font-weight: 800;
+ }
+ 
+ .nucoin_footer-ax3{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 19px;
+   font-weight: 500;
+ }
+ 
+ .nucoin_footer-ax4{
+   border-bottom: 1px solid black;
+   border-radius: 0px 0px 10px 10px;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .nucoin_footer-ax5{
+   border-style: none;
+   height:49px;
+   background-color: inherit;
+   flex: 1;
+   outline: none;
+   height:49px;
+   padding-left: 10px;
+   padding-right: 10px;
+   color:#6d6d6d !important ;
+   font-size: 16px;
+ 
+ }
+ 
+ .nucoin_footer-ax6{
+ font-size: 22px;
+ font-weight: 700;
+ }
+ 
+ .nucoin_footer-ax7{
+   display:flex;
+   gap:4px;
+   margin-top: 10px;
+ }
+ 
+ 
+ 
+ /*footer link */
+ .nucoin_footer_skdfkjsd{
+   display: flex ;
+   align-items: center;
+   gap:10px;
+   line-height: 1.3;
+   margin-top: -16px;
+ }
+ 
+ 
+ .nucoin_footer-link-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   flex-direction: column;
+ }
+ 
+ .nucin_footer-skjdfakjsf{
+   margin-top: 31px;
+ }
+ 
+ .nucoin-hr{
+   height: 1px !important;
+   width:100%;
+   background-color: #3f3e3e;
+   margin-top: 55px;
+   margin-bottom: 40px;
+ }
+ 
+ .nucoin_footer-jsdfk{
+   text-align: center;
+   font-size: 16px;
+ } 
+ }

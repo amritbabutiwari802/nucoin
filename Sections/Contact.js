@@ -1,8 +1,8 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <div className="nucoin_contact_container">
+    <div className="nucoin_contact_container" ref={props.refx}>
       <h1 className="nucoin_contact_heading">Contact Us</h1>
       <div className="nucoin_contact_name_email">
         <input type="text" placeholder="Name" className="nucoin_contact_name" />

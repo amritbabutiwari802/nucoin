@@ -1,24 +1,30 @@
 import React from "react";
 
-const Benifits = () => {
+const Benifits = (props) => {
   return (
-    <div>
+    <div ref={props.refx}>
       <div>
         <div className="nucoin_services-title">What You Get</div>
         <h1 className="nucoin_services-heading">
           Benefits of using Our Solution
         </h1>
-        <div className="nucoin_services_divider">
-          <span className="nucoin_benifits_divider-2" data-aos="fade-right"
-      data-aos-duration="2500">
+        <div className="nucoin_benifit_divider">
+          <span
+            className="nucoin_benifit_divider-1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img
               src="https://nucoin.com.au/assets/images/Block4.png"
               className="nucoin_benifits_divider-2-image"
             />
           </span>
 
-          <span className="nucoin_services_divider-1" data-aos="fade-left"
-      data-aos-duration="2500">
+          <span
+            className="nucoin_benifit_divider-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <p className="nucoin_service_up">{data.up}</p>
             <div className="nucoin_benifits-listContainer">
               {data.list.map((value, index) => (
@@ -30,7 +36,7 @@ const Benifits = () => {
                     viewBox="0 0 24 24"
                     width="16px"
                     fill="#1FF8F2"
-                    class="navigation-icon"
+                    className="navigation-icon"
                     style={{ transform: "rotate(90deg)", marginRight: "25px" }}
                   >
                     <path d="M0 0h24v24H0z" fill="none"></path>

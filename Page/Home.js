@@ -9,16 +9,50 @@ import Benifits from "../Sections/Benifits";
 import Teams from "../Sections/Teams";
 import Contact from "../Sections/Contact";
 import Footer from "../Sections/Footer";
+import { useRef } from "react";
 
 const Home = () => {
+  const ref1 = useRef();
+  const ref2 = useRef();
+  const ref3 = useRef();
+  const ref4 = useRef();
+  const ref5 = useRef();
+  const ref6 = useRef();
+
+  function handleSection(item) {
+    switch (item) {
+      case 1:
+        ref1.current.scrollIntoView();
+        break;
+      case 2:
+        ref2.current.scrollIntoView();
+        break;
+      case 3:
+        ref3.current.scrollIntoView();
+        break;
+      case 4:
+        ref4.current.scrollIntoView();
+        break;
+      case 5:
+        ref5.current.scrollIntoView();
+        break;
+      case 6:
+        ref6.current.scrollIntoView();
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
     <div className=" home_container-main">
-      <Front />  {/*
-      <Second />
-      <About /><Services />
-     <Nugenis /> 
-      */}
-      <Imgrow fade1="1"
+      <Front refx={ref1} handleSection={handleSection} />
+      <Second refx={ref2} />
+      <About refx={ref3} />
+      <Nugenis />
+      <Services refx={ref4} />
+      <Imgrow
+        r
         items={[
           {
             src: "https://nucoin.com.au/assets/images/Block1.png",
@@ -33,10 +67,11 @@ const Home = () => {
             text: "Artificial Intelligence",
           },
         ]}
+        fade1="1"
       />
 
       <Benifits />
-      <Imgrow fade1="2"
+      <Imgrow
         items={[
           {
             src: "https://nucoin.com.au/assets/images/Block5.png",
@@ -51,9 +86,11 @@ const Home = () => {
             text: "World Coverage",
           },
         ]}
+        fade1="2"
       />
 
       <Teams
+        refx={ref5}
         items={[
           {
             src: "https://nucoin.com.au/assets/images/member-1.jpeg",
@@ -78,7 +115,7 @@ const Home = () => {
         ]}
       />
 
-      <Contact />
+      <Contact refx={ref6} />
       <Footer />
     </div>
   );
