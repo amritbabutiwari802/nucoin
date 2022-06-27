@@ -1,12 +1,12 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import Video from "../ComponentsX/Video";
+import Video from "../ComponentsX/Video.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { slide as Menu } from "react-burger-menu";
 
-const DynamicHeader = dynamic(() => import("../ComponentsX/Video"), {
+const DynamicHeader = dynamic(() => import("../ComponentsX/Video.js"), {
   suspense: true,
 });
 
